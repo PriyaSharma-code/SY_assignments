@@ -32,14 +32,14 @@ void infixToPostfix(string s)
 		ns+=s[i]; 
 
 		// If the scanned character is an 
-		// ‘(‘, push it to the stack. 
+		// â€˜(â€˜, push it to the stack. 
 		else if(s[i] == '(') 
 		
 		st.push('('); 
 		
-		// If the scanned character is an ‘)’, 
+		// If the scanned character is an â€˜)â€™, 
 		// pop and to output string from the stack 
-		// until an ‘(‘ is encountered. 
+		// until an â€˜(â€˜ is encountered. 
 		else if(s[i] == ')') 
 		{ 
 			while(st.top() != 'N' && st.top() != '(') 
